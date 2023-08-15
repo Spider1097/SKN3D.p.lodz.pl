@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* tu deklarujemy tylne zdięcia strony */
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/image/1276563.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 2%;
+    padding-right: 2%;
+    box-sizing: border-box;
+}
+
+/* tu deklarujemy tylne zdięcia strony */
+
+/* modyfikacja komponentow znajdujących w headerze */
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 70px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 40px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: blueviolet;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 1s;
+}
+
+nav ul li:hover:after{
+    width: 100%; 
+}
+
+/* modyfikacja komponentow znajdujących w headerze */
+
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-size: 100px;
+}
+
+p {
+    color: #fff;
+    font-size: 16;
+    line-height: 15px;
+}
+
+.columna {
+    flex-basis: 50%;
+    /* margin-left: 50px; */
+}
+
+.button_dolacz {
+    width: 180px;
+    color: black;
+    font-size: 14px;
+    padding: 12px 0;
+    background-color: rgb(246, 246, 75);
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+    /* transition: width 1s, background-color 1s; */
+    transition: padding 0.5s,background-color 1s,border-radius 1s;
+}
+
+.button_dolacz:hover {
+    padding: 15px 15px;
+    background-color: rgb(182, 100, 7);
+    border-radius: 30px;
+}
+
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background: url(/image/871104.png);
+    background-position: center;
+    background-size: contain;
+    transition: transform 0.5s;
+}
+
+.card2 {
+    background-image: url(/image/980847.jpg);
+}
+
+.card3 {
+    background-image: url(/image/985129.jpg);
+}
+
+.card4 {
+    background-image: url(/image/980562.jpg);
+}
+
+.card5 {
+    background-image: url(/image/david.png);
+}
+
+.card6 {
+    background-image: url(/image/boom.jpg);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+h5 {
+    color: white;
+    text-shadow: 0 0 5px #999;
+}
+
+card p {
+    text-shadow: 0 0 15px #000;
+    font-size: 8px;
+}
