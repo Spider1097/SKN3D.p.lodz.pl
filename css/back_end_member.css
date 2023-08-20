@@ -43,7 +43,7 @@ header .navigation .navigation-items a {
 header .navigation .navigation-items a::before {
     content: '';
     position: absolute;
-    background-color: blueviolet;
+    background-color: rgb(23, 212, 64);
     width: 0%;
     height: 3px;
     bottom: -5px;
@@ -82,19 +82,36 @@ section {
 }
 
 .home .content {
-    z-index: 888;
+    display: none; 
     color: white;
-    width: 50%;
-    margin-top: 50px;
-    display: none;
+    z-index: 888;
 }
 
 .home .content.active {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
+    
 }
 
-.home .content h1 {
+.members_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_member{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .content img{
+    width: 300px;
+    border-radius: 20px;
+}
+
+ /* .home .content h1 {
     font-size: 4em;
     font-weight: 900;
     text-transform: uppercase;
@@ -102,8 +119,8 @@ section {
     line-height: 75px;
     margin-bottom: 40px;
 
-}
-
+} */
+/*
 .home .content h1 span {
     font-size: 1.2em;
     font-weight: 600;
@@ -121,7 +138,7 @@ section {
     font-weight: 500;
     text-decoration: none;
     border-radius: 2px;
-}
+} */
 
 .home .media-icons {
     z-index: 888;
@@ -148,7 +165,7 @@ section {
 
  .members_image { 
     z-index: 888;
-    position: absolute;
+    /* position: absolute; */
     right: 20%;
     top: 25%;
     display: flex;
@@ -156,9 +173,13 @@ section {
     transition: 0.5s ease;
  }
 
-.home .content img{
+/* .home .content img{
     width: 300px;
     border-radius: 20px;
+} */
+
+.text p{
+    font-size: 18px;
 }
 
 .home .media-icons a {
@@ -192,7 +213,7 @@ section {
     justify-content: center;
     align-items: center;
     transform: translateY(80px);
-    margin-bottom: 12px;
+    margin-bottom: 20px;
 }
 
 .slider-navigation .nav-btn {
@@ -298,11 +319,11 @@ section {
         top: 40%;
      }
 
-    .home .content img{
+    /* .home .content img{
         border-radius: 20px;
         width: 150px;
         border-radius: 10px;
-    }
+    } */
 
     .burger {
         display: flex;
@@ -354,8 +375,23 @@ section {
     }
 
     .home .content.active {
-        display: grid;
         grid-template-columns: 1fr;
+    }
+
+    .home .content img{
+        width: 150px;
+        border-radius: 20px;
+    }
+
+    .members_image { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .home .media-icons {
+            margin-top: 200px;
     }
 
 }

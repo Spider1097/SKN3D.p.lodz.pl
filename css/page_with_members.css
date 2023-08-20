@@ -43,7 +43,7 @@ header .navigation .navigation-items a {
 header .navigation .navigation-items a::before {
     content: '';
     position: absolute;
-    background-color: blueviolet;
+    background-color: rgb(43, 226, 83);
     width: 0%;
     height: 3px;
     bottom: -5px;
@@ -66,14 +66,14 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background: rgb(62, 133, 204);
+    background: rgb(252, 172, 0);
 }
 
 .home::before {
     z-index: 777;
     content: '';
     position: absolute;
-    background: rgba(3, 96, 251, 0.3);
+    background: rgba(168, 131, 44, 0.3);
     width: 100%;
     height: 100%;
     top: 0;
@@ -82,19 +82,28 @@ section {
 }
 
 .home .content {
-    /* 
-    
-    width: 50%;
-    margin-top: 50px;
-    display: none; */
-    color: white;
     display: none; 
+    color: white;
     z-index: 888;
 }
 
 .home .content.active {
     display: grid;
     grid-template-columns: 1fr 1fr ;
+    
+}
+
+.members_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_member{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .home .content img{
@@ -169,6 +178,10 @@ section {
     border-radius: 20px;
 } */
 
+.text p{
+    font-size: 18px;
+}
+
 .home .media-icons a {
     color: white;
     font-size: 1.6em;
@@ -214,7 +227,7 @@ section {
 }
 
 .slider-navigation .nav-btn.active {
-    background: blue;
+    background: rgb(236, 129, 42);
 
 }
 
@@ -234,7 +247,7 @@ section {
 
 .video-slider.active {
     clip-path: circle(150% at 0 50%);
-    transition: 2s ease;
+    transition: 2.5s ease;
     transition-property: clip-path;
 }
 
